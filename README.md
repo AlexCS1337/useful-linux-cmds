@@ -81,6 +81,12 @@ LANG=ja_JP.UTF-8 wine /path/to/game/game.exe
 WINEPREFIX=/home/alex/.local/share/wineprefixes/wine64/ wine start /unix
 
 
+## Linux TDP limiting/undervolt
+
+sudo nvidia-smi -pm 1
+sudo nvidia-smi -i 0 -pl 180
+sudo nvidia-smi -i 0 -lgc 1500,1600
+
 
 
 
