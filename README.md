@@ -88,7 +88,10 @@ or
 >sudo nvidia-smi -i 0 -pl 180  
 >sudo nvidia-smi -i 0 -lgc 1500,1600
 
-
+### if get warning "Setting locked GPU clocks is not supported for GPU" try:
+>nvidia-settings -c :0 -a '[gpu:0]/GPUGraphicsClockOffset[3]=-200'
+>nvidia-settings -c :0 -a '[gpu:0]/GPUGraphicsClockOffset[2]=-250'
+>nvidia-settings -c :0 -a '[gpu:0]/GPUGraphicsClockOffset[1]=-300'
 
 
 ## OLD
