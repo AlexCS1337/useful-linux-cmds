@@ -98,6 +98,9 @@ or
 
 ## OLD
 
+### Proton-call lets you play game via proton that is not just on Steam
+proton-call -p experimental -r game.exe
+
 TS3 Server:
 
 >cd ts3server
