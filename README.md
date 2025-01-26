@@ -2,40 +2,47 @@
 
 ## Transfer files through each vps:
 
->scp -r -P port root@ip:/root/* .
+```bash
+scp -r -P port root@ip:/root/* .
+```
 
 then
 
->scp -r -P port root@ip:/usr/lib/libcxa.so.1 /usr/lib/libcxa.so.1
-
+```bash
+scp -r -P port root@ip:/usr/lib/libcxa.so.1 /usr/lib/libcxa.so.1
+```
 
 
 ## Update VPS OS:
 
->apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade
-
+```bash
+apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade
+```
 
 
 ## check services
 
->ps aux
-
+```bash
+ps aux
+```
 or
 
->man top
-
+```bash
+man top
+```
 
 
 ## hosting jedi academy server:
 
->cd jka
->
->chmod +x linuxjampded
->
->apt-get install screen
->
->screen -dm ./linuxjampded +set net_port +exec server.cfg
+```bash
+cd jka
 
+chmod +x linuxjampded
+
+apt-get install screen
+
+screen -dm ./linuxjampded +set net_port +exec server.cfg
+```
 
 
 
